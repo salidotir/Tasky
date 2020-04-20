@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlackBG">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="14dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal|left"
+                android:background="@drawable/ic_tasky_logo" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Add New Task"
+            android:textSize="24sp"
+            android:fontFamily="casual"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:paddingRight="14dp"
+        android:paddingLeft="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left|center_vertical"
+            android:text="Title:"
+            android:fontFamily="casual"
+            android:textSize="19sp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_title"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:background="@drawable/edit_text_border" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/text_view_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left|center_vertical"
+            android:text="Text:"
+            android:fontFamily="casual"
+            android:textSize="19sp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_text"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:background="@drawable/edit_text_border" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/text_view_due_time_tmp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left|center_vertical"
+            android:text="Due time:"
+            android:fontFamily="casual"
+            android:textSize="19sp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/text_view_due_time"
+            android:clickable="true"
+            android:onClick="DueTimeOnClick"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="8dp"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:background="@drawable/edit_text_border" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_ok_add_new_task"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:text="OK"
+                android:background="@drawable/clear_history_btn_background"
+                android:fontFamily="casual"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/btn_cancel_add_new_task"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:fontFamily="casual"
+                android:textColor="#ffffff"
+                android:background="@drawable/clear_history_btn_background"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

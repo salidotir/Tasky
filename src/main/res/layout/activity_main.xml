@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBlackBG">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center|top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_gravity="top|center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="14dp">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|left"
+                        android:background="@drawable/ic_tasky_logo" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|right">
+
+                    <Button
+                        android:id="@+id/btn_menu"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center|right"
+                        android:rotation="0"
+                        android:background="@drawable/ic_menu"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="horizontal"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/saturday"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="14dp"
+                        android:text="Sat"
+                        android:fontFamily="casual"
+                        android:textSize="20sp"
+                        android:background="@drawable/round_white_rectangle"/>
+
+                    <Button
+                        android:id="@+id/sunday"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="14dp"
+                        android:text="Sun"
+                        android:fontFamily="casual"
+                        android:textSize="20sp"
+                        android:background="@drawable/round_white_rectangle"/>
+
+                    <Button
+                        android:id="@+id/monday"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="14dp"
+                        android:text="Mon"
+                        android:fontFamily="casual"
+                        android:textSize="20sp"
+                        android:background="@drawable/round_white_rectangle"/>
+
+                    <Button
+                        android:id="@+id/tuesday"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="14dp"
+                        android:text="Tue"
+                        android:fontFamily="casual"
+                        android:textSize="20sp"
+                        android:background="@drawable/round_white_rectangle"/>
+
+                    <Button
+                        android:id="@+id/wednesday"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="14dp"
+                        android:text="Wed"
+                        android:fontFamily="casual"
+                        android:textSize="20sp"
+                        android:background="@drawable/round_white_rectangle"/>
+
+                    <Button
+                        android:id="@+id/thursday"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="14dp"
+                        android:text="Thu"
+                        android:fontFamily="casual"
+                        android:textSize="20sp"
+                        android:background="@drawable/round_white_rectangle"/>
+
+                    <Button
+                        android:id="@+id/friday"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:text="Fri"
+                        android:fontFamily="casual"
+                        android:textSize="20sp"
+                        android:background="@drawable/round_white_rectangle"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/main_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+                android:id="@+id/menu_item"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="14dp"
+                android:paddingLeft="14dp"
+                android:orientation="vertical"
+                android:layout_gravity="right|top"
+                android:background="@color/colorBlackBG"
+                android:visibility="invisible">
+
+                <Button
+                    android:id="@+id/btn_change_password"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_gravity="center"
+                    android:text="Change Pin"
+                    android:fontFamily="casual"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="#0000"/>
+
+                <Button
+                    android:id="@+id/btn_history"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_gravity="center"
+                    android:text="Recently deleted"
+                    android:fontFamily="casual"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="#0000"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/bottom_menu_with_alpha"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorBlackBG"
+                android:alpha="0.7"
+                android:visibility="invisible"/>
+
+    </LinearLayout>
+</FrameLayout>

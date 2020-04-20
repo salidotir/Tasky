@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlackBG"
+    android:paddingRight="14dp"
+    android:paddingLeft="14dp"
+    android:id="@+id/today_fragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="To Do"
+                android:fontFamily="casual"
+                android:textColor="#ffffff"
+                android:textSize="18sp"/>
+
+            <ImageButton
+                android:id="@+id/add_new_task_today_frag_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_add"
+                android:background="@drawable/ic_add_task_bg"/>
+
+            <ImageView
+                android:id="@+id/today_frag_to_do_no_data_img_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_undraw_no_data_qbuo_copy"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/today_todo_frag_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Done"
+                android:fontFamily="casual"
+                android:textColor="#ffffff"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/ic_undraw_no_data_qbuo_copy"/>
+
+            <ImageView
+                android:id="@+id/today_frag_done_no_data_img_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_undraw_no_data_qbuo_copy"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/today_done_frag_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

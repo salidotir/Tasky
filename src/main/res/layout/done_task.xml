@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp"
+    android:paddingLeft="8dp"
+    android:background="@drawable/done_task_bg_round_rectangle"
+    android:id="@+id/done_task_bg">
+
+    <TextView
+        android:id="@+id/task_done_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical|right"
+        android:text="Title"
+        android:textSize="16sp"
+        android:textColor="#ffffff"/>
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/done_task_bg_left_round_rectangle">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_round_background"
+            android:src="@drawable/ic_check_black_24dp"/>
+    </FrameLayout>
+
+
+</LinearLayout>
